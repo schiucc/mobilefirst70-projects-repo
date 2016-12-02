@@ -26,11 +26,9 @@ import javax.ws.rs.core.Response;
 
 import com.ibm.json.java.JSONObject;
 import com.worklight.adapters.rest.api.MFPServerOperationException;
-import com.worklight.adapters.rest.api.SecurityAPI;
 import com.worklight.adapters.rest.api.WLServerAPI;
 import com.worklight.adapters.rest.api.WLServerAPIProvider;
 import com.worklight.core.auth.OAuthSecurity;
-import com.worklight.core.oauth.api.OAuthUserIdentity;
 
 @Path("/")
 public class DummyJavaAdapterResource {
