@@ -1,0 +1,36 @@
+<h1 class="text-center">Login</h1>
+<hr/>
+
+<!-- blockquote>
+	<input ng-model="username" placeholder="Enter username"></input>
+	<input  type="password" ng-model="password" placeholder="Enter password"></input>
+</blockquote>
+<button type="button" class="btn btn-primary" ng-click="MainNavCtrl.submitButtonClicked()">Submit</button -->
+
+<form class="form-horizontal">
+	<div class="col-xs-offset-3 col-xs-9">{{MainNavCtrl.getAuthFailedMessage()}}</div>
+  	<div class="form-group">
+    	<label for="inputUser" class="col-xs-3 control-label">&nbsp;Username:</label>
+    	<div class="col-xs-9">
+      		<input ng-model="username" type="text" class="form-control" id="inputUser" placeholder="Enter username">
+   		</div>
+  	</div>
+  	<div class="form-group">
+    	<label for="inputPassword" class="col-xs-3 control-label">&nbsp;Password:</label>
+    	<div class="col-xs-9">
+      		<input ng-model="password" type="password" class="form-control" id="inputPassword" placeholder="Enter password">
+    	</div>
+  	</div>
+  	<div class="form-group">
+    	<div class="col-xs-offset-3 col-xs-9">
+      		<button type="button" class="btn btn-primary" ng-click="MainNavCtrl.submitButtonClicked()">Submit</button>
+      		<button type="button" class="btn btn-primary" ng-click="MainNavCtrl.cancelButtonClicked()">Cancel</button>
+    	</div>
+  	</div>
+</form>
+
+<!-- div class="container-fluid">
+  <div class="row">
+    ...
+  </div>
+</div-->
